@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array Sorting</title>
+</head>
+<body>
+    <script>
+        // ascending
+       function asc(arr) {
+        var newArr = arr.sort();
+            console.log(newArr);
+        return newArr;
+    }
+        asc(['d','c','e','b','a','k','i','j']);
+
+        //descending
+        var arr = ['g','h','i','j','a','c','b','e','d','g','e','f'];
+        arr.sort((a,b)=>b.localeCompare(a))
+        console.log(arr)
+    </script>
+</body>
+</html>

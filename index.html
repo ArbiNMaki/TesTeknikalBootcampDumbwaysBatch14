@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+<style>
+
+.container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+</style>
+<body>
+    <div class="container">
+        <div class="row">
+            <form>
+
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Nama Lengkap</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Tempat Lahir</label>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Kota
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">Malang</a>
+                          <a class="dropdown-item" href="#">Surabaya</a>
+                          <a class="dropdown-item" href="#">Bali</a>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label >Tanggal Lahir</label>
+                    <input type="date" name="bday" max="3000-12-31" 
+                           min="1000-01-01" class="form-control">
+                   </div>
+
+                   <div class="form-group">
+                    <label for="exampleInputEmail1">No.HP</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Alamat</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Pendidikan Terakhir</label>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Riwayat Pendidikan
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Universitas / Perguruan Tinggi</a>
+                          <a class="dropdown-item" href="#">SD</a>
+                          <a class="dropdown-item" href="#">SMP</a>
+                          <a class="dropdown-item" href="#">SMA</a>
+                        </div>
+                      </div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Agama</label>
+                      <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio3"></label>
+                        <span class="badge badge-pill badge-primary">Islam</span>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio1"></label>
+                        <span class="badge badge-pill badge-info">Kristen</span>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio2"></label>
+                        <span class="badge badge-pill badge-info">Katolik</span>
+                      </div>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Hobi</label>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <label class="custom-control-label" for="customCheck1"></label>
+                        <span class="badge badge-pill badge-primary">Renang</span>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2">
+                        <label class="custom-control-label" for="customCheck2"></label>
+                        <span class="badge badge-pill badge-info">Mancing</span>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck3">
+                        <label class="custom-control-label" for="customCheck3"></label>
+                        <span class="badge badge-pill badge-info">Game</span>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck4">
+                        <label class="custom-control-label" for="customCheck4"></label>
+                        <span class="badge badge-success">Gibah</span>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck5">
+                        <label class="custom-control-label" for="customCheck5"></label>
+                        <span class="badge badge-warning">Programming</span>
+                      </div>
+                  </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+    </div>
+</body>
+</html>
